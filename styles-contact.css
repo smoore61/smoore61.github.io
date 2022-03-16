@@ -60,7 +60,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: url(images/SamMooreBackground.jpg) 
+  background: url(images/bottomback.jpg) 
 	center center fixed no-repeat;
 	background-size: cover;
 	
@@ -82,7 +82,9 @@ html, body {
 
 h1 {
 	/* FONT-FAMILY GOES HERE CHOOSE FROM ADOBE FONTS OR GOOGLE FONTS */
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: freight-big-pro, serif;
+	font-weight: 400;
+	font-style: normal;
 	font-size: 2em;
     margin: 0px auto 10px auto;
     color: #fff;
@@ -90,7 +92,7 @@ h1 {
 
 h2 {
 	 /* FONT-FAMILY GOES HERE CHOOSE FROM ADOBE FONTS OR GOOGLE FONTS */
-	 font-family: acier-bat-gris, sans-serif;
+	 font-family: freight-big-pro, serif;
 	 font-weight: 400;
 	 font-style: normal;
 	font-size: 1.5em;
@@ -109,7 +111,9 @@ p {
     color: #fff;
 } 
 	nav{
-		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-family: garamond-premier-pro, serif;
+		font-weight: 400;
+		font-style: normal;
 		font-size: 1.2em;
 		width: 400px;
 		margin: 0 auto;
@@ -134,7 +138,7 @@ p {
 		font-weight: bold;
 	}
 	a:hover{
-		color:white;
-		background:orange;
+		color:rgb(22, 143, 113);
+		background:none;
 	}
 
