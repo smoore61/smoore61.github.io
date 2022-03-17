@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+<meta charset=”UTF-8”>
+<link rel="stylesheet" href="https://use.typekit.net/fbh4ajy.css">
+<!-- THE TITLE WILL APPEAR IN THE BROWSER WINDOW OR TAB -->
+<title> Samuel Moore </title>
+
+<link rel="stylesheet" href="styles-contact.css">
+</head>
+
+<body>
+    <div class="center">
+        <img id="logo" src="images/Samlogo4@2x.png" alt="Sam Moore's logo">
+        <h1>Sam Moore<br></h1>
+        <h2>translating vision into reality</h2>
+        <nav>
+            <ul)>
+                <li><a href="https://www.behance.net/sammoore13">My Work</a></li>
+                <li><a href="https://www.linkedin.com/in/samemoore/">Linkedin</a></li>
+                <li><a href="mailto:smoore61@calpoly.edu">Email</a></li>
+            </ul>
+    
+        </nav>
+    </div> <!--end of center div-->
+   
+
+</body>
+
+</html>
