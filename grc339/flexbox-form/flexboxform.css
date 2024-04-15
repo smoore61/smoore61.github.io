@@ -1,0 +1,107 @@
+/*CSS DOCUMENT*/
+
+body {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	background-color: #fafafa;
+	box-sizing: border-box;
+	}
+	
+div.container {
+        max-width: 40em;
+        margin: 1em;
+        padding: 1em;
+		
+}
+
+/* I have *some* selectors with their declarations in the declaration block. You’ll need more selectors and declaration blocks. */
+section.personal-info ul {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0em;
+}
+section.personal-info ul li {
+	min-width: 100%;
+	display: flex;
+flex-wrap: wrap;
+margin-bottom: 1.5em;
+}
+
+section.personal-info ul li label {flex: 0 0 8em;
+}
+
+section.personal-info ul li input[type="text"],
+section ul li input[type="email"],
+section ul li input[type="tel"] 
+{flex: 3 0 20em;
+	box-sizing: border-box;
+}
+
+section ul li select {
+	flex: 3 0 20em;
+	box-sizing: border-box;
+}
+
+ul{
+		list-style-type: none;
+	}
+
+section.order ul {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0em;
+	}
+
+section.order ul li {
+	flex: 1 0 15em;
+}
+
+section.method ul{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0em;
+}
+
+section.method ul li{
+	flex: 1 0 15em;
+}
+
+
+section {
+    background: #eee;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+section p {
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+
+h3 {
+	margin: 2em 0em 0em 0em;
+}
+
+textarea {
+	box-sizing: border-box;
+	width: 15em;
+	height: 6em;
+	background: #fcfcfc;
+	border: 1px solid #e8e8e8;
+	padding: 0.4em;
+	font-family: sans-serif;
+	color: #777;
+	display: flex;
+	flex-wrap: wrap;
+	flex: 0 0 15em;
+	min-width: 100%;
+	}
+
+@media only screen and (min-width: 40em) {
+
+  div.container {
+    margin: auto;
+  }
+
+}
