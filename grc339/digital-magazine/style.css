@@ -134,11 +134,16 @@ aside p {
         }
 
         section.tertiary h2{
-            font-size: 1.2em;
             margin-left: 0em;
-            padding-top: .4em;
             margin-right: 0em;
-            border-top: solid rgb(99, 130, 161) 2px;
+        }
+
+        figcaption {
+            margin: .5em 0em 2em 0em;
+        }
+
+        aside p {
+            padding: 0em .6em 0em .6em;
         }
 }
 
