@@ -153,7 +153,7 @@ aside p {
 @media only screen and (min-width: 60em) {
 
 
-    p {
+   aside p {
         margin: 0em 0em 0em 0em;
     }
 
