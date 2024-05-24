@@ -2,9 +2,14 @@
 
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
 
+body {
+    background-color: rgb(242, 235, 207);
+}
+
 div.container, div.home-container {
     max-width: 40em;
     margin: auto;
+    background-color: rgb(242, 235, 207);
 }
 
 header {
@@ -12,16 +17,17 @@ padding: 1em 0em 1em 1em;
 }
 
 h1 {
-    width: 8rem;
+    width: 20rem;
 }
 
 a {
     text-decoration: none;
+    font-family: "bd-orange-variable", sans-serif;
+font-variation-settings: "wght" 400;
 }
 
 nav ul {
-margin-top: 1em;
-margin-bottom: 1em;
+margin-top: 2em;
 list-style-type: none;
 }
 
@@ -33,17 +39,17 @@ nav ul li {
 }
 
 nav ul li a{
-    color: rgb(99, 130, 161);
+    color: rgb(13, 107, 188);
     text-decoration: none;
     
 }
 
 h2 {
-    font-family: serif;
-    font-weight: bold;
-    color: rgb(99, 130, 161);
+    color: rgb(13, 107, 188);
     font-size: 2em;
     margin: .2em 0em 0em .2em;
+    font-family: "bd-orange-variable", sans-serif;
+font-variation-settings: "wght" 600;
 }
 
 section.mainstory h2 {
@@ -51,15 +57,16 @@ section.mainstory h2 {
     }
 
 section.tertiary h2{
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-left: .4em;
     padding-top: .4em;
     margin-right: .4em;
-    border-top: solid rgb(99, 130, 161) 2px;
 }
 
 p {
-    font-family: sans-serif;
+    font-family: "ibarra-real-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color:rgb(34, 34, 34);
     font-size: 1em;
     margin: 0em .5em 2em .5em;
@@ -67,9 +74,11 @@ p {
 }
 
 footer {
-    background-color: rgb(99, 130, 161);
-    font-family: sans-serif;
-    color: rgb(255, 255, 255);
+    background-color: rgb(13, 107, 188);
+    font-family: "ibarra-real-nova", sans-serif;
+font-weight: 400;
+font-style: normal;
+    color: rgb(242, 235, 207);
     padding: 1em 1em 1em .4em;
     margin-top: 0em;
     box-sizing: border-box;
@@ -77,9 +86,9 @@ footer {
 }
 
 figcaption {
-    font-family: sans-serif;
-    font-style: italic;
-    color: rgb(96, 96, 96);
+    font-family: "ibarra-real-nova", sans-serif;
+font-weight: 400;
+font-style: italic;
     margin: .5em .5em 2em .5em;
 }
 
@@ -95,7 +104,7 @@ article h2 {
     }
 
 aside {
-    background-color: rgb(203,207,255);
+  
     padding-bottom:2em;
 }
 
@@ -255,5 +264,3 @@ aside p {
         flex: 0 0 auto;
     }
 }
-
-
