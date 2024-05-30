@@ -3,13 +3,13 @@
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
 
 body {
-    background-color: rgb(242, 235, 207);
+    background-color: rgb(255, 255, 255);
 }
 
-div.container, div.home-container {
+div.container, div.home-container, div.gallery-container {
     max-width: 40em;
     margin: auto;
-    background-color: rgb(242, 235, 207);
+    background-color: rgb(255, 255, 255);
 }
 
 header {
@@ -22,8 +22,9 @@ h1 {
 
 a {
     text-decoration: none;
-    font-family: "bd-orange-variable", sans-serif;
-font-variation-settings: "wght" 400;
+    font-family: "barricada-pro", serif;
+font-weight: 200;
+font-style: normal;
 }
 
 nav ul {
@@ -46,39 +47,47 @@ nav ul li a{
 
 h2 {
     color: rgb(13, 107, 188);
-    font-size: 2em;
+    font-size: 1.5em;
     margin: .2em 0em 0em .2em;
-    font-family: "bd-orange-variable", sans-serif;
-font-variation-settings: "wght" 600;
+    font-family: "barricada-pro", serif;
+font-weight: 200;
+font-style: normal;
+padding-top: .5em;
+line-height: 1em;
 }
 
 section.mainstory h2 {
-    font-size: 3em;
+    font-size: 2.2em;
     }
 
 section.tertiary h2{
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin-left: .4em;
     padding-top: .4em;
     margin-right: .4em;
 }
 
 p {
-    font-family: "ibarra-real-nova", sans-serif;
-    font-weight: 400;
+    font-family: "fractul-variable", sans-serif;
+font-variation-settings: "wght" 400;
     font-style: normal;
     color:rgb(34, 34, 34);
     font-size: 1em;
     margin: 0em .5em 2em .5em;
     line-height: 140%;
+    padding-top: 1em;
+}
+
+article p {
+    font-size: 1.1em;
 }
 
 footer {
     background-color: rgb(13, 107, 188);
-    font-family: "ibarra-real-nova", sans-serif;
-font-weight: 400;
-font-style: normal;
-    color: rgb(242, 235, 207);
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: "wght" 400;
+        font-style: normal;
+    color: rgb(255, 255, 255);
     padding: 1em 1em 1em .4em;
     margin-top: 0em;
     box-sizing: border-box;
@@ -86,8 +95,9 @@ font-style: normal;
 }
 
 figcaption {
-    font-family: "ibarra-real-nova", sans-serif;
-font-weight: 400;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: "wght" 400;
+        
 font-style: italic;
     margin: .5em .5em 2em .5em;
 }
@@ -122,6 +132,223 @@ aside h2 {
 aside p {
     padding: 0em .5em 0em .5em;
 }
+
+div.gallery {
+    max-width: 60em;
+    margin: auto;
+    padding: 1em;
+    
+
+
+}
+
+
+main.gallery {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(66% + 5em);
+    
+   
+}
+
+
+
+
+
+
+figure.gallery{
+    margin: auto;
+    width: calc(100%-2em);
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+
+}
+
+figcaption.gallery {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 1em 0;
+    color: rgb(34, 34, 34);
+}
+
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
+    opacity: 1;
+}
+
+nav.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-gap: 0.2em;
+    padding-bottom: 2em;
+}
+
+body.gallery {
+    font-family: sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	background-color: #ddd;
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2.gallery {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 2em;
+}
+
+img.gallery {
+	width: 100%;
+}
+
+
+input {
+    display: none;
+}
+
+
+
+
+h4 {
+    color: rgb(13, 107, 188);
+    font-size: 1.5em;
+    margin: .2em 0em 0em .2em;
+    font-family: "barricada-pro", serif;
+font-weight: 200;
+font-style: normal;
+padding-top: .5em;
+line-height: 1em;
+}
+
+section ul li label {    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: "wght" 400;
+        font-style: normal;
+        color:rgb(34, 34, 34);
+        font-size: 1em;
+        margin: 0em .5em 2em .5em;
+        line-height: 140%;
+        padding-top: 1em;
+    }
+
+
+section.inquiries label.inquiries {
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: "wght" 400;
+        font-style: normal;
+        color:rgb(34, 34, 34);
+        font-size: 1em;
+        margin: 0em .5em 2em .5em;
+        line-height: 140%;
+        padding-top: 1em;
+}
+
+
+
+
+
+
+
+body {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	box-sizing: border-box;
+	}
+	
+div.container {
+        max-width: 40em;
+        margin: 1em;
+        padding: 1em;
+		
+}
+
+/* I have *some* selectors with their declarations in the declaration block. You’ll need more selectors and declaration blocks. */
+section.personal-info ul {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0em;
+}
+section.personal-info ul li {
+	min-width: 100%;
+	display: flex;
+flex-wrap: wrap;
+margin-bottom: 1.5em;
+}
+
+section.personal-info ul li label {flex: 0 0 8em;
+}
+
+
+
+section ul li {
+	flex: 3 0 20em;
+	box-sizing: border-box;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: "wght" 400;
+    padding-top: 2em;
+}
+
+ul{
+		list-style-type: none;
+	}
+
+
+
+
+section {
+
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+section p {
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+
+h3 {
+	margin: 2em 0em 0em 0em;
+}
+
+textarea {
+	box-sizing: border-box;
+	width: 15em;
+	height: 6em;
+
+	border: 1px solid #e8e8e8;
+	padding: 0.4em;
+	font-family: sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	flex: 0 0 15em;
+	min-width: 100%;
+	}
+
+@media only screen and (min-width: 40em) {
+
+  div.container {
+    margin: auto;
+  }
+
+}
+
+
+
+
+
+
+
+
 @media screen and (min-width: 40em){
     nav ul li {
         display: inline;
@@ -157,7 +384,18 @@ aside p {
         aside p {
             padding: 0em .6em 0em .6em;
         }
+        div.gallery {
+    
+            padding: 0em;
+        }
+
 }
+
+
+
+
+
+
 
 @media only screen and (min-width: 60em) {
 
@@ -180,6 +418,14 @@ aside p {
         display: grid;
         grid-template-columns: 3fr 1fr;
         grid-gap: 1em;
+    }
+
+    div.gallery-container {
+        max-width: 60em;
+        padding: 0 1em;
+        display: grid;
+        margin:auto;
+     
     }
 
     header, footer {
