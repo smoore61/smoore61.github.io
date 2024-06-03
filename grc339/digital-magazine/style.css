@@ -349,7 +349,10 @@ input[type="text"]
 	box-sizing: border-box;
 }
 
-
+label {
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: "wght" 400;
+}
 
 
 
